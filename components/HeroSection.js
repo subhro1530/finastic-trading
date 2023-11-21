@@ -58,10 +58,10 @@ const HeroSection = () => {
             padding="10px 35px"
             bg="#21B084"
             mr={4}
+            color="black"
+            border="2px solid #21B084"
             _hover={{
-              bg: "transparent",
-              borderColor: "#21B084",
-              color: "#21B084",
+              opacity: "0.8",
             }}
           >
             START LEARNING
@@ -73,21 +73,21 @@ const HeroSection = () => {
             padding="15px 45px"
             border="2px solid #21B084"
             color="#21B084"
-            _hover={{ bg: "#21B084", color: "white" }}
+            _hover={{ bg: "#21B084", color: "black" }}
           >
             LEARN MORE
           </Button>
         </Box>
       </Box>
-      <Box flex="1">
+      <Box height="100%" width="100%" flex="1">
         {/* Replace the demo link with your 3D content */}
         <iframe
-          title="3D Content"
-          src="https://your-3d-demo-link.com"
+          margin="0px"
           width="100%"
-          height="100%"
-          style={{ borderRadius: "8px" }}
-        />
+          height="100%" // 16:9 aspect ratio (9/16 = 56.25)
+          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FVTkPxSe7IP3CQQ11tOxUQG%2FTaskAway-%2526-TerraGrow-Solutions%3Ftype%3Ddesign%26node-id%3D150%253A30%26mode%3Ddev"
+          allowFullScreen
+        ></iframe>
       </Box>
     </Box>
   );

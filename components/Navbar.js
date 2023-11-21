@@ -98,6 +98,7 @@ const Navbar = () => {
           <Flex display={{ base: "flex", md: "none" }}>
             <IconButton
               color="white"
+              _hover={{ backgroundColor: "#21b084" }}
               icon={
                 isOpen ? (
                   <FontAwesomeIcon icon={faTimes} />

@@ -5,3 +5,12 @@ body {
   font-family: 'Aladin', sans-serif;
 }
 
+:root {
+  --bg-color: #01050e;
+  --primary-color: #21b084;
+  --secondary-color: #00ffb1;
+  --text-color: #ffffff;
+  --accent-color: #182b25;
+}
+
+/* Add any global styles you need */

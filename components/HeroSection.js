@@ -1,6 +1,7 @@
 // HeroSection.js
 import React, { useState, useEffect } from "react";
 import { Box, Button, Heading } from "@chakra-ui/react";
+import Image from "next/image";
 
 const HeroSection = () => {
   const [currentColor, setCurrentColor] = useState("#00FFB1");
@@ -79,15 +80,26 @@ const HeroSection = () => {
           </Button>
         </Box>
       </Box>
-      <Box height="100%" width="100%" flex="1">
+      <Box
+        height="70%"
+        width="100%"
+        display="flex"
+        alignItems="center"
+        flex="1"
+        borderRadius="20px"
+        borderTop="4px solid black"
+        borderBottom="4px solid black"
+        boxShadow="5px 5px 15px 20px rgba(0,0,0,.3)"
+        bgColor="#00FFB1"
+      >
         {/* Replace the demo link with your 3D content */}
-        <iframe
-          margin="0px"
+        <img
+          src="https://strapi-public-bucket.s3.amazonaws.com/2_Information_about_trades_ace07ca5ad.gif"
+          height="100%"
           width="100%"
-          height="100%" // 16:9 aspect ratio (9/16 = 56.25)
-          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FVTkPxSe7IP3CQQ11tOxUQG%2FTaskAway-%2526-TerraGrow-Solutions%3Ftype%3Ddesign%26node-id%3D150%253A30%26mode%3Ddev"
-          allowFullScreen
-        ></iframe>
+          alt="Img"
+          borderRadius="20px"
+        ></img>
       </Box>
     </Box>
   );

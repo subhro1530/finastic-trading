@@ -8,6 +8,7 @@ const Index = () => {
   return (
     <Box>
       <Navbar />
+      <HeroSection/>
       {/* Add the rest of your content here */}
       <Testimonials />
     </Box>

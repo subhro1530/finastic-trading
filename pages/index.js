@@ -9,7 +9,6 @@ const Index = () => {
     <Box>
       <Navbar />
       <HeroSection />
-      <PaymentGateway />
       {/* Add the rest of your content here */}
     </Box>
   );

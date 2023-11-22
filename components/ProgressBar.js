@@ -1,10 +1,8 @@
-// ProgressBar.js
 import React, { useEffect, useState } from "react";
-import { Box, Progress } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 
 const ProgressBar = () => {
   const [scrollPercentage, setScrollPercentage] = useState(0);
-  const [progressColor, setProgressColor] = useState("black");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -13,13 +11,6 @@ const ProgressBar = () => {
       const scrolled = window.scrollY;
       const percentage = (scrolled / scrollHeight) * 100;
       setScrollPercentage(percentage);
-
-      // Change color to #00FFB1 when scroll percentage is greater than 10%
-      if (percentage > 10) {
-        setProgressColor("#00FFB1");
-      } else {
-        setProgressColor("black");
-      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -29,28 +20,17 @@ const ProgressBar = () => {
     };
   }, []);
 
-  return (
-    <Box
-      position="fixed"
-      top="0"
-      left="0"
-      right="0"
-      zIndex="999"
-      display="flex"
-      justifyContent="center"
-      pointerEvents="none"
-    >
-      <Progress
-        value={scrollPercentage}
-        size="xs"
-        color={progressColor}
-        position="absolute"
-        top="0"
-        left="0"
-        right="0"
-      />
-    </Box>
-  );
+  const progressBarStyle = {
+    height: "4px",
+    width: `${scrollPercentage}%`,
+    backgroundColor: "#00FFB1",
+    position: "fixed",
+    top: "0",
+    left: "0",
+    zIndex: "999",
+  };
+
+  return <Box style={progressBarStyle} />;
 };
 
 export default ProgressBar;

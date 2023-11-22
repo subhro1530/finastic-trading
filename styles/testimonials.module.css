@@ -1,0 +1,33 @@
+/* testimonials.module.css */
+@keyframes leftslideAnimation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes rightslideAnimation {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.firstCont,
+.thirdCont {
+  animation: leftslideAnimation 1s forwards;
+}
+.secondCont {
+  animation: rightslideAnimation 1s forwards;
+}
+
+.leftSlideAnimation {
+  animation: leftSlideAnimation 0.8s ease-in-out forwards;
+}
+
+.rightSlideAnimation {
+  animation: rightSlideAnimation 0.8s ease-in-out forwards;
+}

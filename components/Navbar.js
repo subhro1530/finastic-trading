@@ -25,6 +25,7 @@ import {
   faTimes,
 } from "@fortawesome/free-solid-svg-icons";
 import ProgressBar from "./ProgressBar";
+import Image from "next/image";
 
 const Navbar = () => {
   const { isOpen, onToggle } = useDisclosure();
@@ -40,8 +41,8 @@ const Navbar = () => {
         zIndex="1000"
       >
         <Flex alignItems="center" justifyContent="space-between">
-          <Box>
-            <img src="/your-logo.png" alt="Logo" />
+          <Box mt={2}>
+            <Image mt={4} src="/hori_logo.png" height={150} width={250} alt="Logo" />
           </Box>
           <Flex gap={8} display={{ base: "none", md: "flex" }}>
             <Link

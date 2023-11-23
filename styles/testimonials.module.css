@@ -15,19 +15,19 @@
     transform: translateX(0);
   }
 }
-
+/* 
 .firstCont,
 .thirdCont {
   animation: leftslideAnimation 1s forwards;
 }
 .secondCont {
   animation: rightslideAnimation 1s forwards;
-}
+} */
 
 .leftSlideAnimation {
-  animation: leftSlideAnimation 0.8s ease-in-out forwards;
+  animation: leftslideAnimation 1.5s forwards;
 }
 
 .rightSlideAnimation {
-  animation: rightSlideAnimation 0.8s ease-in-out forwards;
+  animation: rightslideAnimation 1.5s forwards;
 }

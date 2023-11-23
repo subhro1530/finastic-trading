@@ -36,7 +36,7 @@ const HeroSection = () => {
       bgSize="cover"
       bgPosition="center"
       bgRepeat="no-repeat"
-      height="90vh"
+      height="100vh"
       display="flex"
       alignItems="center"
       justifyContent="space-between"

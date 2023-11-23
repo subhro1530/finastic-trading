@@ -1,8 +1,10 @@
 /* globals.css */
-@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Aladin&display=swap");
+html {
+  overflow: hidden !important;
+}
 body {
-  font-family: 'Aladin', sans-serif;
+  font-family: "Aladin", sans-serif;
 }
 
 :root {

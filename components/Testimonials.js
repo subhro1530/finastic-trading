@@ -1,5 +1,4 @@
 // components/Testimonials.js
-// components/Testimonials.js
 import { useRef, useEffect, useState } from "react";
 import { Box, Text, VStack, Button } from "@chakra-ui/react";
 import styles from "@/styles/testimonials.module.css";
@@ -43,7 +42,7 @@ const Testimonial = ({ name, profession, quote, videoSrc, alignment }) => {
       ref={boxRef}
       display="flex"
       alignItems="center"
-      className={animationClass}
+      className={styles.animationClass}
     >
       {alignment === "left" && (
         <Box
@@ -157,7 +156,6 @@ const Testimonials = () => {
           textAlign: "center",
           borderRadius: "2rem",
           height: "4rem",
-          width: "37rem",
           fontSize: "1.9rem",
           fontFamily: "Aladin",
           fontWeight: "normal",

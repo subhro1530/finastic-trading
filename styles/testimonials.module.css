@@ -23,6 +23,9 @@
 .secondCont {
   animation: rightslideAnimation 1s forwards;
 } */
+.animationClass {
+  font-family: "Aladin", sans-serif;
+}
 
 .leftSlideAnimation {
   animation: leftslideAnimation 1.5s forwards;

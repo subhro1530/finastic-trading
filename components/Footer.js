@@ -57,20 +57,17 @@ const Footer = () => {
           </Text>
           <Text>2023 © All rights reserved. Finastic Trading</Text>
         </VStack>
-        <Box align="center" fontSize="large">
-          <VStack>
-            <HStack align="center" width="100%">
-              <FontAwesomeIcon icon={faFileLines} /> <Text>Privacy Policy</Text>
-            </HStack>
-            <HStack align="center" width="100%">
-              <FontAwesomeIcon icon={faFileLines} />{" "}
-              <Text>Risk Disclaimer</Text>
-            </HStack>
-            <HStack align="center" width="100%">
-              <FontAwesomeIcon icon={faFileLines} /> <Text>Terms of Use</Text>
-            </HStack>
-          </VStack>
-        </Box>
+        <VStack align="center" fontSize="large">
+          <HStack align="center" width="100%">
+            <FontAwesomeIcon icon={faFileLines} /> <Text>Privacy Policy</Text>
+          </HStack>
+          <HStack align="center" width="100%">
+            <FontAwesomeIcon icon={faFileLines} /> <Text>Risk Disclaimer</Text>
+          </HStack>
+          <HStack align="center" width="100%">
+            <FontAwesomeIcon icon={faFileLines} /> <Text>Terms of Use</Text>
+          </HStack>
+        </VStack>
       </Box>
     </HStack>
   );
